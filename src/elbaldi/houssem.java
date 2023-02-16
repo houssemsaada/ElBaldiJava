@@ -5,33 +5,20 @@
  */
 package elbaldi;
 
-import elbaldi.services.CommandeCRUD;
 import elbaldi.models.commande;
 import elbaldi.models.livraison;
 import elbaldi.models.panier;
+import elbaldi.services.CommandeCRUD;
 import elbaldi.services.livraisonCRUD;
 import elbaldi.services.panierCRUD;
 import java.sql.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Locale;
 
 /**
  *
  * @author houss
  */
-public class Elbaldi {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-
-        // TODO code application logic here
-        //  long millis=System.currentTimeMillis();  
-        // java.sql.Date date=new java.sql.Date(millis);
-        String date_comm = "2023-02-10";
+public class houssem {
+    String date_comm = "2023-02-10";
         Date date_com = Date.valueOf(date_comm);
         String date_liv = "2023-02-18";
         Date date_livr = Date.valueOf(date_liv);
@@ -62,6 +49,4 @@ public class Elbaldi {
         //pan.modifierPanier(pan1);
         //pan.supprimerPanier(3);
         //System.out.println(pan.afficherPanier());
-    }
-
 }
