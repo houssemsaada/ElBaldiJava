@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="973.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.AfficherParticipationController">
+   <children>
+      <Label layoutX="298.0" layoutY="31.0" prefHeight="34.0" prefWidth="197.0" text="Afficher Partcipation">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="268.0" layoutY="87.0" prefHeight="511.0" prefWidth="684.0">
+         <content>
+            <GridPane fx:id="gridpane" prefHeight="514.0" prefWidth="676.0" style="-fx-background-color: #DCDCDC;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="179.20001831054688" minHeight="10.0" prefHeight="179.20001831054688" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="188.8" minHeight="10.0" prefHeight="188.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="184.00001220703126" minHeight="3.8000091552734716" prefHeight="132.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="145.60001220703128" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="145.60001220703128" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="retour_btn" layoutX="888.0" layoutY="39.0" mnemonicParsing="false" onAction="#retournerHome" text="Retour" />
+      <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-2.0" prefHeight="656.0" prefWidth="256.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@elbaldiimage.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ScrollPane prefHeight="492.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="216.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;">
+                     <children>
+                        <Button fx:id="Accueilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Accueil" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/accueil.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="45.0" mnemonicParsing="false" onAction="#profilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Profil" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/utilisateur.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="categoriefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="90.0" mnemonicParsing="false" onAction="#categ" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Catégories" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/categorie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="produitfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="135.0" mnemonicParsing="false" onAction="#prodd" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Produits" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="commandefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="180.0" mnemonicParsing="false" onAction="#commandesAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Commandes" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/colis.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Livrfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="225.0" mnemonicParsing="false" onAction="#LivraisonAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Livraisons" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/livraison-rapide.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Bonplanfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="270.0" mnemonicParsing="false" onAction="#BonpalnsAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Bon plans" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/tunisie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Quizfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="315.0" mnemonicParsing="false" onAction="#QuizAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Quiz" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/idees.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Eventfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="359.0" mnemonicParsing="false" onAction="#eventaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Evènements" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/un-evenement.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="participationfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="404.0" mnemonicParsing="false" onAction="#participationaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Participations" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/les-mains-en-lair.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="GestUser" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="449.0" mnemonicParsing="false" onAction="#GestuserAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Gestion utilisateurs" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/les-mains-en-lair.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Decofx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="494.0" mnemonicParsing="false" onAction="#decoAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../Nouveau%20dossier/Nouveau%20dossier/style.css" text="Déconnexion" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
