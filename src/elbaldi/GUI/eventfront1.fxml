@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="197.0" prefWidth="295.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="elbaldi.GUI.Eventfront1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="180.0" prefWidth="262.0" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@event.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomLabel" layoutX="199.0" layoutY="4.0" prefHeight="48.0" text="Label" />
+            <Label fx:id="date_debut_label" layoutX="199.0" layoutY="42.0" prefHeight="50.0" text="Label" />
+            <Label fx:id="desclabel" layoutX="117.0" layoutY="143.0" text="Label" />
+            <Label layoutX="130.0" layoutY="19.0" text="Nom :">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="58.0" prefHeight="18.0" prefWidth="50.0" text="Duree :">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="121.0" prefHeight="18.0" prefWidth="86.0" text="Description:">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="id_label" layoutX="24.0" layoutY="5.0" text="Label" visible="false" />
+            <Accordion />
+            <Label fx:id="lblclientt" layoutX="61.0" layoutY="5.0" text="Label" visible="false" />
+            <Label layoutX="110.0" layoutY="96.0" prefHeight="18.0" prefWidth="74.0" text="Awards:">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="awardslbl" layoutX="198.0" layoutY="95.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

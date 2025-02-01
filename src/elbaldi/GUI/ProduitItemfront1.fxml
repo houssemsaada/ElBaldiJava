@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="353.0" prefWidth="274.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ProduitItemfront1Controller">
+   <children>
+      <AnchorPane fx:id="dest" layoutX="3.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="274.0">
+         <children>
+            <ImageView fx:id="imagefx" fitHeight="207.0" fitWidth="214.0" layoutX="34.0" layoutY="9.0" onMouseClicked="#details" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Ressources/Logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="libellefx" layoutX="32.0" layoutY="237.0" prefHeight="51.0" prefWidth="207.0" text="Libelle Produit" textFill="#a44949">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="prixfx" layoutX="160.0" layoutY="288.0" prefHeight="32.0" prefWidth="110.0" text="Prix">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

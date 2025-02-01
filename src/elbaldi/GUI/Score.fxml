@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="580.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ScoreController">
+   <children>
+      <Label fx:id="bravo" layoutX="245.0" layoutY="123.0">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="termine" layoutX="132.0" layoutY="227.0" prefHeight="27.0" prefWidth="382.0">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgfx" fitHeight="101.0" fitWidth="120.0" layoutX="236.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ressource/felicitation.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="138.0" layoutY="168.0" text="Totale score :">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxscore" layoutX="301.0" layoutY="168.0" prefHeight="30.0" prefWidth="72.0" textFill="#fc0707">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="codeqr" layoutX="92.0" layoutY="318.0" prefHeight="28.0" prefWidth="456.0">
+         <font>
+            <Font name="Cambria Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="reduction" layoutX="161.0" layoutY="275.0" prefHeight="27.0" prefWidth="349.0" textFill="#d30c0c">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="echec" layoutX="64.0" layoutY="280.0" prefHeight="30.0" prefWidth="492.0">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="qrfix" fitHeight="109.0" fitWidth="125.0" layoutX="201.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="a" ellipsisString="" layoutX="66.0" layoutY="481.0" lineSpacing="2.0" prefHeight="25.0" prefWidth="414.0" text="Si vous n'arrivez pas à scanner le code QR, vous pouvez " textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="aa" layoutX="159.0" layoutY="508.0" text="pour récupérer le code promo par email.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="email" layoutX="462.0" layoutY="479.0" onAction="#email" text="cliquer ici" underline="true" />
+      <ImageView fx:id="sadfx" fitHeight="129.0" fitWidth="141.0" layoutX="218.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../Ressources/sad.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

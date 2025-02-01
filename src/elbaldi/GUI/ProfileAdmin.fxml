@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ProfileAdmin">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+         <children>
+            <Pane fx:id="pnlOverview" layoutX="6.0" prefHeight="680.0" prefWidth="1216.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="568.0" layoutY="48.0" prefHeight="65.0" prefWidth="329.0" text="PROFILE ADMIN" textFill="#bf1c1c">
+                     <font>
+                        <Font name="Arial Black" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="470.0" layoutY="226.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Prénom" />
+                  <Label layoutX="476.0" layoutY="326.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Nom" />
+                  <Label layoutX="813.0" layoutY="229.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Numéro de téléphone" />
+                  <TextField fx:id="adminpagename" layoutX="470.0" layoutY="275.0" />
+                  <TextField fx:id="adminpagelastname" layoutX="471.0" layoutY="380.0" />
+                  <TextField fx:id="adminpagetel" layoutX="813.0" layoutY="272.0" prefHeight="25.0" prefWidth="175.0" />
+                  <Label layoutX="484.0" layoutY="439.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Ville" />
+                  <TextField fx:id="adminpageaddress" layoutX="470.0" layoutY="491.0" />
+                  <DatePicker fx:id="adminpagedate" layoutX="810.0" layoutY="382.0" />
+                  <Label layoutX="814.0" layoutY="330.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Date de naissance" />
+                  <Button fx:id="updateadmin" layoutX="636.0" layoutY="570.0" mnemonicParsing="false" onAction="#updtahost" prefHeight="37.0" prefWidth="198.0" styleClass="button1" stylesheets="@Styles/controls.css" text="Modifier profile" />
+                  <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="486.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Ressources/user-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox alignment="TOP_CENTER" layoutX="-3.0" layoutY="4.0" prefHeight="680.0" prefWidth="256.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000;">
+               <children>
+                  <ImageView fitHeight="112.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Al%20Baldi.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ScrollPane prefHeight="492.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;" stylesheets="@style.css">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="544.0" prefWidth="216.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;" stylesheets="@style.css">
+                           <children>
+                              <Button fx:id="Accueilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Accueil" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/accueil.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="45.0" mnemonicParsing="false" onAction="#profilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Profile" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/utilisateur.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="categoriefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="90.0" mnemonicParsing="false" onAction="#categ" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Catégories" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/categorie.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="produitfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="135.0" mnemonicParsing="false" onAction="#prodd" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Produits" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/produit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="commandefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="180.0" mnemonicParsing="false" onAction="#commandesAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Commandes" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/colis.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Livrfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="225.0" mnemonicParsing="false" onAction="#LivraisonAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Livraisons" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/livraison-rapide.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Bonplanfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="270.0" mnemonicParsing="false" onAction="#BonpalnsAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Bon plans" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/tunisie.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Quizfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="315.0" mnemonicParsing="false" onAction="#QuizAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Quiz" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/idees.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Eventfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="359.0" mnemonicParsing="false" onAction="#eventaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Evènements" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/un-evenement.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="participationfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="404.0" mnemonicParsing="false" onAction="#participationaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Participations" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/les-mains-en-lair.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="GestUser" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="449.0" mnemonicParsing="false" onAction="#GestuserAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Gestion utilisateurs" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/silhouette-dutilisateurs-multiples.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Decofx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="494.0" mnemonicParsing="false" onAction="#decoAction" prefHeight="0.0" prefWidth="234.0" stylesheets="@../../../../../../../Downloads/Nouveau%20dossier/Nouveau%20dossier/style.css" text="Déconnexion" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/se-deconnecter.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@style.css" />
+      <URL value="@Styles/style.css" />
+   </stylesheets>
+</AnchorPane>

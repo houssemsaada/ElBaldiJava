@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.BpDetailsFront1Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css">
+         <children>
+            <ImageView fx:id="img" fitHeight="304.0" fitWidth="202.0" layoutX="28.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="titrefx" layoutX="244.0" layoutY="60.0" prefHeight="22.0" prefWidth="254.0" text="Titre Bon plan">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="descfx" layoutX="244.0" layoutY="105.0" prefHeight="61.0" prefWidth="317.0" text="Description Bon plan">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="typefx" layoutX="246.0" layoutY="178.0" prefHeight="31.0" prefWidth="113.0" text="Type Bon plan">
+               <font>
+                  <Font name="Bell MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="retourfx" layoutX="28.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" text="Retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

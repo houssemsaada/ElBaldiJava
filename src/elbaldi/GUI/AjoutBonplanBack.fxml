@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="typ" prefHeight="559.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.AjoutBonplanBackController">
+   <children>
+      <Label layoutX="197.0" layoutY="27.0" text="Ajouter Bon plan" textFill="#b91010">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouterBTN" layoutX="144.0" layoutY="496.0" mnemonicParsing="false" onAction="#ajouterBonPlan" prefHeight="25.0" prefWidth="155.0" text="Ajouter" />
+      <Label layoutX="94.0" layoutY="110.0" prefHeight="27.0" prefWidth="155.0" text="Tirtre:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="396.0" prefHeight="27.0" prefWidth="89.0" text="Image:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="imageBP" layoutX="282.0" layoutY="377.0" prefHeight="77.0" prefWidth="174.0" />
+      <Button fx:id="insérer" layoutX="475.0" layoutY="403.0" mnemonicParsing="false" onAction="#insererOnClick" prefHeight="31.0" prefWidth="72.0" text="Insérer" />
+      <Label layoutX="91.0" layoutY="189.0" prefHeight="27.0" prefWidth="174.0" text="Description:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionBP" layoutX="284.0" layoutY="172.0" prefHeight="77.0" prefWidth="174.0" />
+      <Button fx:id="annuler" layoutX="366.0" layoutY="496.0" mnemonicParsing="false" onAction="#AnnulerOnClick" prefHeight="25.0" prefWidth="155.0" text="Annuler" />
+      <Label layoutX="95.0" layoutY="299.0" prefHeight="27.0" prefWidth="89.0" text="Type:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titreBP" layoutX="287.0" layoutY="111.0" onMouseClicked="#prefixe" prefHeight="31.0" prefWidth="201.0" />
+      <ComboBox fx:id="typeFx" layoutX="283.0" layoutY="300.0" prefHeight="31.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>

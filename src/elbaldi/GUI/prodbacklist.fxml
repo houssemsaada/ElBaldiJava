@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ProdbacklistController">
+   <children>
+      <ScrollPane fx:id="scroll" layoutX="292.0" layoutY="117.0" prefHeight="485.0" prefWidth="900.0">
+         <content>
+            <GridPane fx:id="grid" prefHeight="230.0" prefWidth="268.0">
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="ajoutfx" layoutX="1048.0" layoutY="14.0" mnemonicParsing="false" onAction="#ajouter" stylesheets="@style.css" text="Ajouter produit" />
+      <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="1009.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ressource/ajouter.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="showC" layoutX="1070.0" layoutY="50.0" mnemonicParsing="false" onAction="#refresh" prefHeight="23.0" prefWidth="100.0" stylesheets="@style.css" text="Rafraîchir" />
+      <Label layoutX="283.0" layoutY="11.0" prefHeight="53.0" prefWidth="353.0" text="Gestion Produits" textFill="#a20812">
+         <font>
+            <Font name="Arial Black" size="33.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefHeight="656.0" prefWidth="276.0" style="-fx-background-color: #ffff; -fx-padding: 12; -fx-border-style: solid inside; -fx-border-width: 4; -fx-border-insets: 5; -fx-border-radius: 5; -fx-border-color: #000000">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Ressources/Logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <ScrollPane prefHeight="492.0" prefWidth="263.0" style="-fx-background-color: #FFFFFF;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="680.0" prefWidth="216.0" style="-fx-background-color: #FFFFFF; -fx-background-color: ;">
+                     <children>
+                        <Button fx:id="Accueilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" mnemonicParsing="false" onAction="#accueilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Accueil" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/accueil%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-10.0" layoutY="45.0" mnemonicParsing="false" onAction="#profilAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Profile" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/utilisateur.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="categoriefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="90.0" mnemonicParsing="false" onAction="#categ" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Catégories" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/categorie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="produitfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="135.0" mnemonicParsing="false" onAction="#prodd" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Produits" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="commandefx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="180.0" mnemonicParsing="false" onAction="#commandesAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Commandes" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/colis%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Livrfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-9.0" layoutY="225.0" mnemonicParsing="false" onAction="#LivraisonAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Livraisons" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/livraison-rapide.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Bonplanfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="270.0" mnemonicParsing="false" onAction="#BonpalnsAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Bon plans" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/tunisie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Quizfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="315.0" mnemonicParsing="false" onAction="#QuizAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Quiz" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/idees.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Eventfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="359.0" mnemonicParsing="false" onAction="#eventaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Evènements" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/un-evenement.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="participationfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-8.0" layoutY="404.0" mnemonicParsing="false" onAction="#participationaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Participations" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/les-mains-en-lair.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="GestUser" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="449.0" mnemonicParsing="false" onAction="#GestuserAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Gestion utilisateurs" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/silhouette-dutilisateurs-multiples.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Decofx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-7.0" layoutY="494.0" mnemonicParsing="false" onAction="#decoAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Déconnexion" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../Ressources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <TextField fx:id="searchField" layoutX="285.0" layoutY="81.0" promptText="Rechercher..." />
+      <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="476.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ressources/search.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="categoriesfx" layoutX="866.0" layoutY="81.0" prefHeight="31.0" prefWidth="187.0" promptText="Categories Produits">
+         <stylesheets>
+            <URL value="@quiz.css" />
+            <URL value="@quiz.css" />
+         </stylesheets></ComboBox>
+   </children>
+</AnchorPane>

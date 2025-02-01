@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 févr. 2023, 13:02:55
+    Author     : selim
+*/
+
+.quiz-item{
+  
+        -fx-background-radius: 30;
+}
+
+.transparentt{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.chosen-Quiz-card{
+    -fx-background-color:  #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.buttonn
+{
+-fx-background-color : #a20812;
+-fx-text-fill : #FFFFFF;
+
+}
+.select {
+  color: #fff; /* Définit la couleur du texte à blanc */
+  background-color: #000; /* Définit la couleur d'arrière-plan à noir */
+  border: none; /* Supprime la bordure */
+  padding: 5px; /* Ajoute un espacement autour de la zone de liste déroulante */
+  font-size: 16px; /* Définit la taille de police */
+  font-family: Arial, sans-serif; /* Définit la police */
+}
+
+
+
+.button
+{
+-fx-background-color : #a20812;
+-fx-text-fill : #e7e5e5;
+}
+.button:hover{
+-fx-background-color : #EBEAEA;
+}
+.button:pressed
+{
+-fx-background-color : #fdf6e9;
+}
+
+/*.scroll-pane {
+    -fx-background-color: #02030A;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}*/
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}

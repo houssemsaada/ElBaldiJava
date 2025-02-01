@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="353.0" prefWidth="274.0" style="-fx-background-color: #ffffff;" styleClass="quiz-item" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ProduitItemController">
+   <children>
+      <ImageView fx:id="imagefx" fitHeight="192.0" fitWidth="207.0" layoutX="38.0" layoutY="15.0" onMouseClicked="#details" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ressources/Logo.png" />
+         </image></ImageView>
+      <Label fx:id="libellefx" layoutX="25.0" layoutY="234.0" prefHeight="51.0" prefWidth="207.0" text="Libelle Produit" textFill="#a20812">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+      <Label fx:id="prixfx" layoutX="153.0" layoutY="279.0" prefHeight="32.0" prefWidth="115.0" text="Prix">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

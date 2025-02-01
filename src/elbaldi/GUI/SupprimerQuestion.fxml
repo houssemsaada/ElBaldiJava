@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.gui.SupprimerQuestionController">
+   <children>
+      <Text layoutX="221.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supprimer Question">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonSupprimerQ" layoutX="278.0" layoutY="415.0" mnemonicParsing="false" onAction="#supprimer_Question" text="Supprimer Question" />
+      <Button fx:id="backfix" layoutX="34.0" layoutY="27.0" mnemonicParsing="false" onAction="#goBack" text="&lt;-  Back" />
+      <Text fx:id="fxquestion" layoutX="94.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="197.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulte" />
+      <Text fx:id="fxdifficulte" layoutX="209.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ListView fx:id="listview" layoutX="13.0" layoutY="67.0" prefHeight="200.0" prefWidth="685.0" />
+      <Label layoutX="313.0" layoutY="278.0" text="Reponse1" />
+      <Label fx:id="fxreponse1" layoutX="326.0" layoutY="306.0" />
+      <Label layoutX="444.0" layoutY="278.0" text="Reponse 2" />
+      <Label fx:id="fxreponse2" layoutX="456.0" layoutY="306.0" />
+      <Label layoutX="574.0" layoutY="278.0" text="Reponse 3" />
+      <Label fx:id="fxreponse3" layoutX="585.0" layoutY="306.0" />
+      <Label layoutX="91.0" layoutY="345.0" text="Solution" />
+      <Label fx:id="fxsolutionn" layoutX="99.0" layoutY="369.0" />
+      <Label fx:id="fxquiz" layoutX="244.0" layoutY="369.0" />
+      <Label layoutX="244.0" layoutY="345.0" text="Id_quiz" />
+      <Text layoutX="500.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question" />
+      <Label fx:id="fxquestionn" layoutX="510.0" layoutY="369.0" />
+   </children>
+</AnchorPane>
