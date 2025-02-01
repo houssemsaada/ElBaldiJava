@@ -7,8 +7,11 @@ package elbaldi.models;
 
 /**
  *
- * @author houss
+ * @author mEtrOpOliS
  */
-public class sq4 {
- int f = 5 ;    
-}
+
+
+public enum Role {
+    client,admin;
+    
+    }
