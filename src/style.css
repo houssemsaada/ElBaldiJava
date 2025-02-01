@@ -1,0 +1,6 @@
+.gradient{ 
+    -fx-background-color: linear-gradient(to top, #676767, transparent);
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 8);
+}

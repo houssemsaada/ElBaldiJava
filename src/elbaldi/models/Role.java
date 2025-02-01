@@ -5,13 +5,10 @@
  */
 package elbaldi.models;
 
-/**
- *
- * @author mEtrOpOliS
- */
+
 
 
 public enum Role {
-    client,admin;
+    client,admin,livreur,agent;
     
     }

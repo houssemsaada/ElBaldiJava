@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.JouerQuizController">
+   <children>
+      <RadioButton fx:id="fixreponse1" layoutX="120.0" layoutY="142.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="tunisie" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="fixreponse2" layoutX="120.0" layoutY="190.0" mnemonicParsing="false" toggleGroup="$tunisie" />
+      <RadioButton fx:id="fixreponse3" layoutX="120.0" layoutY="240.0" mnemonicParsing="false" toggleGroup="$tunisie" />
+      <Button fx:id="fixsuivante" layoutX="244.0" layoutY="314.0" mnemonicParsing="false" onAction="#suivante" prefHeight="31.0" prefWidth="167.0" stylesheets="@style.css" />
+      <Text fx:id="fixquestion" layoutX="53.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="506.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font></Text>
+      <Label fx:id="numerofx" layoutX="39.0" layoutY="4.0" prefHeight="38.0" prefWidth="363.0" textAlignment="CENTER" textFill="#a20812">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Button fx:id="back" layoutX="571.0" layoutY="-1.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="16.0" style="-fx-background-color: #a20812;" styleClass="transparentt" stylesheets="@quiz.css" text="X" />
+   </children>
+</AnchorPane>

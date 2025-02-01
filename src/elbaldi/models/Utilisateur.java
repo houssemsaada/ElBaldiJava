@@ -5,28 +5,44 @@
  */
 package elbaldi.models;
 
+import java.sql.Date;
+import java.time.LocalDate;
+
 /**
  *
  * @author mEtrOpOliS
  */
-
-
 public class Utilisateur {
+
     private int id_user;
     private String nom;
     private String prenom;
     private String email;
-    private String dateNaissance;
+
+    private Date dateNaissance;
     private int numTel;
+
     private String ville;
-    private String login;
     private String mdp;
     private Role role;
+
+    private Etat etat;
+
+    private int nombrejouer;
 
     public Utilisateur() {
     }
 
-    public Utilisateur(int id_user, String nom, String prenom, String email, String dateNaissance, int numTel, String ville, String login, String mdp, Role role) {
+    public Utilisateur(String email) {
+        this.email = email;
+    }
+
+    public Utilisateur(int id_user) {
+        this.id_user = id_user;
+    }
+
+    public Utilisateur(int id_user, String nom, String prenom, String email, Date dateNaissance, int numTel, String ville, String mdp, Role role, Etat etat) {
+
         this.id_user = id_user;
         this.nom = nom;
         this.prenom = prenom;
@@ -34,21 +50,66 @@ public class Utilisateur {
         this.dateNaissance = dateNaissance;
         this.numTel = numTel;
         this.ville = ville;
-        this.login = login;
         this.mdp = mdp;
         this.role = role;
+        this.etat = etat;
     }
 
-    public Utilisateur(String nom, String prenom, String email, String dateNaissance, int numTel, String ville, String login, String mdp, Role role) {
+    public Utilisateur(String nom, String prenom, String email, Date dateNaissance, int numTel, String ville, String mdp, Role role, Etat etat) {
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.dateNaissance = dateNaissance;
         this.numTel = numTel;
         this.ville = ville;
-        this.login = login;
         this.mdp = mdp;
         this.role = role;
+        this.etat = etat;
+    }
+
+    public Utilisateur(String nom, String prenom, String email, Date dateNaissance, int numTel, String ville, String mdp) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.dateNaissance = dateNaissance;
+        this.numTel = numTel;
+        this.ville = ville;
+        this.mdp = mdp;
+    }
+
+    public Utilisateur(int id_user, String nom, String prenom, String email, Date dateNaissance, int numTel, String ville, String mdp) {
+        this.id_user = id_user;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.dateNaissance = dateNaissance;
+        this.numTel = numTel;
+        this.ville = ville;
+        this.mdp = mdp;
+    }
+
+    public Utilisateur(int id_user, String nom, String prenom, String email, Date dateNaissance, int numTel, String ville) {
+        this.id_user = id_user;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.dateNaissance = dateNaissance;
+        this.numTel = numTel;
+        this.ville = ville;
+    }
+
+    public Utilisateur(int id_user, String nom, String prenom, String email, Date dateNaissance, int numTel, String ville, String mdp, Role role, Etat etat, int nombrejouer) {
+        this.id_user = id_user;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.email = email;
+        this.dateNaissance = dateNaissance;
+        this.numTel = numTel;
+        this.ville = ville;
+        this.mdp = mdp;
+        this.role = role;
+        this.etat = etat;
+        this.nombrejouer = nombrejouer;
     }
 
     public int getid_user() {
@@ -83,12 +144,20 @@ public class Utilisateur {
         this.email = email;
     }
 
-    public String getDateNaissance() {
+    public Date getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(String dateNaissance) {
+    public void setDateNaissance(Date dateNaissance) {
         this.dateNaissance = dateNaissance;
+    }
+
+    public int getId_user() {
+        return id_user;
+    }
+
+    public void setId_user(int id_user) {
+        this.id_user = id_user;
     }
 
     public int getNumTel() {
@@ -107,14 +176,6 @@ public class Utilisateur {
         this.ville = ville;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public String getMdp() {
         return mdp;
     }
@@ -123,20 +184,51 @@ public class Utilisateur {
         this.mdp = mdp;
     }
 
+    public Role reformRole(String role) {
+        String extractedWord = role.replaceAll("[^a-zA-Z]+", "");
+        Role Roles = Role.valueOf(extractedWord);
+        System.out.println(Roles);
+        return Roles;
+
+    }
+    
+    public Etat reformEtat(String etat) {
+        String extractedWord = etat.replaceAll("[^a-zA-Z]+", "");
+        Etat etats = Etat.valueOf(extractedWord);
+        System.out.println(etats);
+        return etats;
+
+    }
+
     public Role getRole() {
         return role;
+    }
+
+    public void setEtat(Etat etat) {
+        this.etat = etat;
+    }
+
+    public Etat getEtat() {
+        return etat;
     }
 
     public void setRole(Role role) {
         this.role = role;
     }
 
+    public int getNombrejouer() {
+        return nombrejouer;
+    }
+
+    public void setNombrejouer(int nombrejouer) {
+        this.nombrejouer = nombrejouer;
+    }
+
     @Override
     public String toString() {
-        return "Utilisateur{" + "id_user=" + id_user + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", dateNaissance=" + dateNaissance + ", numTel=" + numTel + ", ville=" + ville + ", login=" + login + ", mdp=" + mdp + ", role=" + role + '}';
+
+        return nom;
+
     }
-    
-    
+
 }
-
-

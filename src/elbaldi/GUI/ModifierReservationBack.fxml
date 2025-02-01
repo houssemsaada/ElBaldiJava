@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ModifierReservationBackController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="7.0" layoutY="11.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="216.0" layoutY="25.0" text="Modifier Reservation" textFill="#b91010">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="modifier" layoutX="98.0" layoutY="392.0" mnemonicParsing="false" onAction="#modifierRsv" prefHeight="25.0" prefWidth="155.0" text="modifier" />
+            <Button fx:id="annuler" layoutX="341.0" layoutY="392.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" text="Annuler" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="85.0" layoutY="93.0" prefHeight="27.0" prefWidth="192.0" text="Nombre de personnes">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="159.0" prefHeight="27.0" prefWidth="174.0" text="date de réservation">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="210.0" prefHeight="27.0" prefWidth="174.0" text="Statut_réservation">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nombreR" layoutX="341.0" layoutY="94.0" onMouseClicked="#prefixe" />
+      <TextField fx:id="dateR" layoutX="341.0" layoutY="153.0" />
+      <TextField fx:id="statutR" layoutX="341.0" layoutY="211.0" />
+      <Label layoutX="95.0" layoutY="267.0" prefHeight="27.0" prefWidth="174.0" text="id de bon plan">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idplanTF" layoutX="342.0" layoutY="268.0" />
+      <Label layoutX="95.0" layoutY="327.0" prefHeight="27.0" prefWidth="174.0" text="id d'utilisateur">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDuserTF" layoutX="342.0" layoutY="328.0" />
+   </children>
+</AnchorPane>

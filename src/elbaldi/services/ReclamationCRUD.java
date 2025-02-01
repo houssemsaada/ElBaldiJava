@@ -26,7 +26,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
     @Override
     public void ajouterReclamation(Reclamation r){
         try {
-            String req ="INSERT INTO `reclamation`(`Date`, `description`, `id_userClient`) VALUES ('"+r.getDate()+"','"+r.getDescription()+"','"+r.getid_userClient()+"')";
+            String req ="INSERT INTO `reclamation`(`Date`, `description`, `id_user`) VALUES ('"+r.getDate()+"','"+r.getDescription()+"','"+r.getid_user()+"')";
             ste = conn.createStatement();
             ste.executeUpdate(req);
             System.out.println("Reclamation ajouté!!!");
@@ -42,7 +42,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
     @Override
     public void modifierReclamation(Reclamation r ,int idReclamation) {{
         try {
-            String req = "UPDATE `reclamation` SET `Date` = '" + r.getDate() + "',`description` = '" + r.getDescription()+  "' , `id_userClient` = '" + r.getid_userClient() +"' WHERE `idReclamation` = " + idReclamation;
+            String req = "UPDATE `reclamation` SET `Date` = '" + r.getDate() + "',`description` = '" + r.getDescription()+  "' , `id_user` = '" + r.getid_user() +"' WHERE `idReclamation` = " + idReclamation;
             Statement st = conn.createStatement();
             st.executeUpdate(req);
             System.out.println("Reclamation updated !");
@@ -71,7 +71,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
                    r.setidReclamation(RS.getInt(1));
               r.setDate(RS.getString(2));
              r.setDescription(RS.getString(3));
-     r.setid_userClient(RS.getInt(4));
+     r.setid_user(RS.getInt(4));
                   
              list.add(r);
             }
@@ -107,7 +107,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
                   r.setidReclamation(RS.getInt(1));
                   r.setDate(RS.getString(2));
                   r.setDescription(RS.getString(3));
-                  r.setid_userClient(RS.getInt(4));
+                  r.setid_user(RS.getInt(4));
             
         }
     return r;
@@ -131,7 +131,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
                    r.setidReclamation(RS.getInt(1));
               r.setDate(RS.getString(2));
              r.setDescription(RS.getString(3));
-                  r.setid_userClient(RS.getInt(4));  
+                  r.setid_user(RS.getInt(4));  
              
                 
 
@@ -146,7 +146,7 @@ public class ReclamationCRUD implements InterfaceCRUD2{
                  r.setidReclamation(RS.getInt(1));
                  r.setDate(RS.getString(2));
                  r.setDescription(RS.getString(3));
-                 r.setid_userClient(RS.getInt(4));
+                 r.setid_user(RS.getInt(4));
                     list.add(r);
                 }
             }
@@ -160,11 +160,9 @@ public class ReclamationCRUD implements InterfaceCRUD2{
     public boolean afficherReclamation() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public boolean getReclamationByID(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
     public boolean Filter_Reclamation(String nom, String test) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

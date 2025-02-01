@@ -13,9 +13,9 @@ import java.sql.Date;
  * @author houss
  */
 public interface livraisonInterfaceCRUD {
-    public void ajouterLivraison(livraison l,commande c) ; 
-    public void modifierLivraison(livraison l,commande c);
-    public void supprimerLivraison(int id_livraison) ;
+    public void ajouterLivraison(livraison l) ; 
+    public void modifierLivraison(livraison l);
+    public void supprimerLivraison(livraison l) ;
     public List<livraison> afficherLivraison();
     public List<livraison> filtreByDate(Date date_livraison);
     public List<livraison> sortlivraisonByDate();

@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.controlsfx:controlsfx:11.0.3'
+}

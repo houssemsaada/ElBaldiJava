@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="809.0" prefWidth="1409.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ClientMainScreeen">
+    <children>
+        <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="1384.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <VBox alignment="TOP_CENTER" layoutX="-20.0" layoutY="-20.0" prefHeight="810.0" prefWidth="297.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <ImageView fitHeight="146.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../resources/logo.png" />
+                                    </image>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" top="50.0" />
+                                    </VBox.margin>
+                                </ImageView>
+                        <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#ProfileUser" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Profil" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/utilisateur.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="produitfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#prodd" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Produits" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/produit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Bonplanfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#BonpalnsAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Bon plans" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/tunisie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Quizfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#QuizAction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Quiz" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/idees.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Eventfx" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#eventaction" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Evènements" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/un-evenement.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnSignout1" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Déconnexion" textFill="#e7e5e5">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/se-deconnecter.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                            </children>
+                        </VBox>
+                        <StackPane layoutX="277.0" layoutY="-20.0" prefHeight="756.0" prefWidth="1114.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <Pane fx:id="pnlCustomer" prefHeight="654.0" prefWidth="1092.0">
+                                    <children>
+                                        <GridPane fx:id="grid" layoutX="-16.0" layoutY="56.0" prefHeight="732.0" prefWidth="1086.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                        </GridPane>
+                              <Button fx:id="produitfx1" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="852.0" layoutY="26.0" mnemonicParsing="false" onAction="#histcommandes" prefHeight="45.0" prefWidth="234.0" stylesheets="@style.css" text="Historique des commandes" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                              </Button>
+                              <ImageView fitHeight="23.0" fitWidth="27.0" layoutX="867.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/colis.png" />
+                                 </image>
+                              </ImageView>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

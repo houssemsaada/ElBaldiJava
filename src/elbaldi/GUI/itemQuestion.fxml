@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="itemPane" prefHeight="222.0" prefWidth="1180.0" style="-fx-background-color: #ffffff;" styleClass="quiz-item" stylesheets="@quiz.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ItemQuestionController">
+   <children>
+      <Label layoutX="10.0" layoutY="8.0" prefHeight="22.0" prefWidth="92.0" text="Question : ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixquestion" layoutX="120.0" layoutY="9.0" prefHeight="22.0" prefWidth="977.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="40.0" text="Difficulté :">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixdiffculte" layoutX="121.0" layoutY="41.0" prefHeight="22.0" prefWidth="690.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label layoutX="11.0" layoutY="73.0" text="Réponse 1 :">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fixreponse1" layoutX="120.0" layoutY="72.0" prefHeight="22.0" prefWidth="797.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label layoutX="12.0" layoutY="106.0" text="Réponse 2 :">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="140.0" text="Réponse 3 :">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="174.0" text="Solution : ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxrep2" layoutX="120.0" layoutY="106.0" prefHeight="22.0" prefWidth="808.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label fx:id="fixrep3" layoutX="120.0" layoutY="139.0" prefHeight="22.0" prefWidth="963.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label fx:id="fxsolution" layoutX="120.0" layoutY="173.0" prefHeight="22.0" prefWidth="891.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <Label fx:id="quizfx" layoutX="946.0" layoutY="163.0" prefHeight="22.0" prefWidth="220.0" visible="false">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font></Label>
+      <ImageView fitHeight="94.0" fitWidth="98.0" layoutX="1045.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Ressource/question.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fixsupp" layoutX="1077.0" layoutY="182.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <Button fx:id="fxmodifier" layoutX="971.0" layoutY="182.0" mnemonicParsing="false" onAction="#modifier" prefHeight="31.0" prefWidth="94.0" text="Modifier" />
+      <Label fx:id="idLabel" layoutX="709.0" layoutY="70.0">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.Affichereventfront2Controller">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="656.0" prefWidth="1216.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-10.0" layoutY="-10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="1233.0" style="-fx-background-color: #ffff">
+               <children>
+                  <ImageView fitHeight="449.0" fitWidth="798.0" layoutX="251.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true" />
+                  <ScrollPane layoutX="318.0" layoutY="127.0" prefHeight="511.0" prefWidth="850.0">
+                     <content>
+                        <GridPane fx:id="gridpane" prefHeight="514.0" prefWidth="839.0" style="-fx-background-color: #DCDCDC;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="179.20001831054688" minHeight="10.0" prefHeight="179.20001831054688" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="188.8" minHeight="10.0" prefHeight="188.8" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="184.00001220703126" minHeight="3.8000091552734716" prefHeight="132.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="145.60001220703128" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="145.60001220703128" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <ImageView fitHeight="92.0" fitWidth="110.0" layoutX="81.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Ressources/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Accordion layoutX="4.0" layoutY="221.0" />
+                  <HBox layoutX="679.0" layoutY="81.0" prefHeight="42.0" prefWidth="287.0" />
+                  <VBox layoutX="1.0" layoutY="123.0" prefHeight="135.0" prefWidth="202.0" />
+                  <VBox layoutX="29.0" layoutY="123.0" prefHeight="316.0" prefWidth="195.0">
+                     <children>
+                        <AnchorPane prefHeight="250.0" prefWidth="195.0">
+                           <children>
+                              <Button fx:id="profilfx" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="2.0" layoutY="45.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#profilAction" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Profil" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/utilisateur.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="prodfx" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="2.0" layoutY="86.0" mnemonicParsing="false" onAction="#produitsf" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Produits" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/produit.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="bonplanfx" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="2.0" layoutY="127.0" mnemonicParsing="false" onAction="#bonplanAction" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Bons plans" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/tunisie.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Eventfx" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="2.0" layoutY="169.0" mnemonicParsing="false" onAction="#EventAction" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Evènements" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/un-evenement.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="Quizfx" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="2.0" layoutY="210.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#QuizAction" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Quiz" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/idees.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="decofx" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="2.0" layoutY="251.0" mnemonicParsing="false" onAction="#deconfx" prefHeight="41.0" prefWidth="193.0" stylesheets="@style.css" text="Déconnexion" textFill="#e7e5e5">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Ressources/se-deconnecter.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <Label layoutX="380.0" layoutY="44.0" prefHeight="37.0" prefWidth="287.0" text="Les évènements" textFill="#a20812">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow color="#1b1eeb" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

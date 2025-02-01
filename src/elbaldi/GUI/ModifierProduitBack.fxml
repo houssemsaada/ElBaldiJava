@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.ModifierProduitBackController">
+   <children>
+      <Pane fx:id="pnlOverview" prefHeight="589.0" prefWidth="803.0" style="-fx-background-color: #ffff;" stylesheets="@style.css">
+         <children>
+            <Label layoutX="269.0" layoutY="17.0" text="Modifier Produit" textFill="#b91010">
+               <font>
+                  <Font name="Arial Black" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="Modifierfx" layoutX="329.0" layoutY="543.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" text="Modifier" />
+            <Label layoutX="222.0" layoutY="84.0" prefHeight="27.0" prefWidth="155.0" text="Réference :">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="132.0" prefHeight="27.0" prefWidth="106.0" text="Libelle :">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="268.0" layoutY="423.0" prefHeight="27.0" prefWidth="89.0" text="Image:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="img" layoutX="428.0" layoutY="408.0" prefHeight="77.0" prefWidth="174.0" />
+            <Button fx:id="insérer" layoutX="617.0" layoutY="415.0" mnemonicParsing="false" text="Insérer" />
+            <Label layoutX="218.0" layoutY="194.0" prefHeight="27.0" prefWidth="174.0" text="Description:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="descriptionfx" layoutX="429.0" layoutY="177.0" prefHeight="91.0" prefWidth="333.0" />
+            <TextField fx:id="prixfx" layoutX="428.0" layoutY="278.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label layoutX="212.0" layoutY="266.0" prefHeight="50.0" prefWidth="129.0" text="Prix de vente:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="235.0" layoutY="340.0" prefHeight="27.0" prefWidth="106.0" text="Catégorie :">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="categoriefx" layoutX="429.0" layoutY="343.0" prefHeight="25.0" prefWidth="172.0" />
+            <TextField fx:id="reffx" layoutX="429.0" layoutY="86.0" onMouseClicked="#prefixe" prefHeight="31.0" prefWidth="333.0" />
+            <TextField fx:id="libellefx" layoutX="428.0" layoutY="132.0" prefHeight="31.0" prefWidth="333.0" />
+            <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="750.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Ressources/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgg" fitHeight="99.0" fitWidth="209.0" layoutX="437.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

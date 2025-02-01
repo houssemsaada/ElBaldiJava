@@ -13,13 +13,13 @@ public class Reclamation {
      private int idReclamation;
     private String date;
     private String description;
-    private int id_userClient;
+    private int id_user;
 
-    public Reclamation(int id, String date, String description, int id_userClient) {
+    public Reclamation(int id, String date, String description, int id_user) {
         this.idReclamation = idReclamation;
         this.date = date;
         this.description = description;
-        this.id_userClient = id_userClient;
+        this.id_user = id_user;
     }
 
     public Reclamation() {
@@ -28,7 +28,7 @@ public class Reclamation {
     public Reclamation(String date, String description, int idClient) {
         this.date = date;
         this.description = description;
-        this.id_userClient = id_userClient;
+        this.id_user = id_user;
     }
 
     public int getidReclamation() {
@@ -55,18 +55,20 @@ public class Reclamation {
         this.description = description;
     }
 
-    public int getid_userClient() {
-        return id_userClient;
+    public int getid_user() {
+        return id_user;
     }
 
-    public void setid_userClient(int id_userClient) {
-        this.id_userClient = id_userClient;
+    public void setid_user(int id_user) {
+        this.id_user = id_user;
     }
 
     @Override
     public String toString() {
-        return "Reclamation{" + "idReclamation=" + idReclamation + ", date=" + date + ", description=" + description + ", id_userClient=" + id_userClient + '}';
+        return "Reclamation{" + "idReclamation=" + idReclamation + ", date=" + date + ", description=" + description + ", id_user=" + id_user + '}';
     }
+
+  
 
    
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="parentContainer" prefHeight="656.0" prefWidth="1216.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.Login">
+    <children>
+        <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass">
+
+            <children>
+                <Button fx:id="login_button" layoutX="700.0" layoutY="484.0" mnemonicParsing="false" onAction="#attempteToLogin" prefHeight="37.0" prefWidth="186.0" styleClass="button1" stylesheets="@Styles/controls.css" text="Se connecter" wrapText="true" />
+                <Button fx:id="Register_button" layoutX="1151.0" layoutY="54.0" mnemonicParsing="false" onAction="#signUp" onMouseClicked="#registerClicked" prefHeight="32.0" prefWidth="181.0" styleClass="button1" stylesheets="@Styles/controls.css" text="Créer compte" wrapText="true" />
+                <Label layoutX="918.0" layoutY="60.0" styleClass="label1" stylesheets="@Styles/controls.css" text="Pas encore un membre ?" />
+                <Hyperlink fx:id="fp_hyperlink" layoutX="565.0" layoutY="684.0" onAction="#forgetPassword" styleClass="Fpss" stylesheets="@Styles/controls.css" text="Mot de passe oublié ?" />
+                <HBox alignment="CENTER_RIGHT" prefHeight="65.0" prefWidth="1383.0" styleClass="FontAwesomeIcon" stylesheets="@Styles/controls.css" />
+            <TextField fx:id="emailLogin" layoutX="537.0" layoutY="366.0" prefHeight="26.0" prefWidth="230.0" promptText="Email" />
+            <PasswordField fx:id="PasswordLogin" layoutX="537.0" layoutY="421.0" prefHeight="26.0" prefWidth="230.0" promptText="Mot de passe " />
+            <CheckBox fx:id="remember_me" layoutX="517.0" layoutY="494.0" mnemonicParsing="false" style="-fx-text-fill: #000;" text="Se Souvenir de moi!" />
+            <ImageView fitHeight="271.0" fitWidth="443.0" layoutX="523.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Ressources/Logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="656.0" prefWidth="1216.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elbaldi.GUI.Code">
+    <children>
+        <ImageView fitHeight="131.0" fitWidth="143.0" layoutX="544.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/logo.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnid" layoutX="504.0" layoutY="459.0" mnemonicParsing="false" onAction="#SendMail" prefHeight="38.0" prefWidth="200.0" styleClass="button1" stylesheets="@Styles/controls.css" text="Valider" />
+        <Label layoutX="384.0" layoutY="282.0" styleClass="labelf1" stylesheets="@Styles/controls.css" text="Nous avons envoyé un code de vérification à 5 symboles" textFill="WHITE" />
+      <TextField fx:id="mailid" layoutX="502.0" layoutY="366.0" prefHeight="37.0" prefWidth="200.0" promptText="Code" />
+      <Label layoutX="239.0" layoutY="185.0" text="ENTREZ LE CODE DE VÉRIFICATION  !" textFill="#a11414">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back1" layoutX="18.0" layoutY="22.0" mnemonicParsing="false" onAction="#goBack" prefHeight="27.0" prefWidth="78.0" text="Retour">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <stylesheets>
+            <URL value="@Styles/style.css" />
+            <URL value="@style.css" />
+         </stylesheets>
+      </Button>
+    </children>
+
+</AnchorPane>
